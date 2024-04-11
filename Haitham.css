@@ -96,6 +96,8 @@ body, html{
   margin: 0;
   background: #2b2927;
   font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1{
   text-align: center;
@@ -163,7 +165,53 @@ img{
   display: block;
   transition-duration: .3s;
 }
+.footer .containerx{
+    padding-top: 50px;
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    width: calc(100% );
+    justify-content: space-around;
+    background: rgb(20, 16, 141);
+    background: linear-gradient(
+      90deg,
+      rgba(20, 16, 141, 1) 20%,
+      rgba(255, 0, 0, 1) 100%
+    );
+    padding-bottom: 30px;
+}
+.footer .containerx h3{
+    color: rgb(254, 185, 20);
+}
+.footer .containerx ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .containerx li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*fa-whatsapp*/
+.footer .containerx .fa-whatsapp{
+    color: green;
+    font-size: 30px;
 
+}
+.footer .containerx .fa-facebook{
+    color:blue;
+    font-size: 30px;
+
+}
+.footer .containerx .fa-tiktok{
+    color:#204681;
+    font-size: 30px;
+
+}
+.footer .containerx a{
+    color:  rgb(254, 185, 20);
+}
 @media only screen and (max-width: 900px) {
     .container {
         width: calc(100% - 6px);
@@ -186,5 +234,14 @@ img{
 @media only screen and (max-width: 400px) {
     .container {
         width: 100%;
+    }
+}
+@media(max-width:660px){
+    .footer .containerx{
+        flex-direction: column;
+      
+    }
+    .footer{
+      
     }
 }
