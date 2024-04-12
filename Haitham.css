@@ -111,6 +111,9 @@ h1{
       color: white;
      
     }
+    span{
+      color: red;
+    }
 .container-all{
   width: fit-content;
   margin: 20px auto;
@@ -222,6 +225,11 @@ img{
   color:#ff7f07;
   font-size: 30px;
 cursor: pointer;
+}
+.footer .containerx .fa-phone{
+  color: rgb(64, 246, 64);
+  font-size: 25px;
+  cursor: pointer;
 }
 .footer .containerx svg:hover{
   color: white;
